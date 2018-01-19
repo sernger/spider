@@ -167,7 +167,7 @@ def do_xiaoqu_spider(big_areas):
 
 def property_spider(url_page):
     """
-    爬取页面链接中的小区信息
+    爬取页面链接中的二手房信息
     """
     #try:
     #print('search %s' % url_page)
@@ -234,7 +234,7 @@ def property_spider(url_page):
 @stop_time
 def do_property_spider(big_areas, start=0):
     """
-    爬取大区域中的所有小区信息
+    爬取所有二手房信息
     """
     xiaoqu_url = u'/ershoufang/'
     #查找大区域
@@ -269,7 +269,7 @@ def do_property_spider(big_areas, start=0):
 
 def trans_spider(url_page):
     """
-    爬取页面链接中的小区信息
+    爬取页面链接中的交易信息
     """
     #try:
     #print('search %s' % url_page)
@@ -327,7 +327,7 @@ def trans_spider(url_page):
 @stop_time
 def do_trans_spider(big_areas, start=0):
     """
-    爬取大区域中的所有小区信息
+    爬取所有交易信息
     """
     xiaoqu_url = u'/chengjiao/'
     #查找大区域
