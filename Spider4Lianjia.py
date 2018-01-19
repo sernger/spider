@@ -16,8 +16,8 @@ Properties_Info_Col = ['小区名字', '大区域', '小区域', '建造时间',
 Transitions_Info_Col = ['小区名字', '大区域', '小区域', '价格','交易时间','面积','房型', '单价', '楼层',
                         '朝向', '装修', '链接']
 Home_url = u"http://sh.lianjia.com"
-Lianjia_Account = ''
-Lianjia_Password = ''
+Lianjia_Account = 'your account'
+Lianjia_Password = 'your password'
 Cookies = None
 Req = None
 
@@ -364,7 +364,7 @@ if __name__ == '__main__':
     login()
     districts = district_spider()
 
-    btrans = False
+    btrans = True
     bstock = True
     bcommunity = True
     # 成交
